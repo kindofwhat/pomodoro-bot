@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+group = 'org.bluepenguin'
+archivesBaseName = 'pomodor'
+version = '0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'com.ullink.slack:simpleslackapi:0.3.1-SNAPSHOT-FORK'
+    testCompile 'junit:junit:4.11'
+}
